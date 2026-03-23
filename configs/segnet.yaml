@@ -1,0 +1,30 @@
+model:
+  n_points: 8192
+  scales:
+    - n_centers: 512
+      k_neighbors: 32
+    - n_centers: 256
+      k_neighbors: 8
+    - n_centers: 64
+      k_neighbors: 8
+  embed_dim: 384
+  depth: 6
+  heads: 6
+  n_parts: 6
+training:
+  epochs: 100
+  batch_size: 16
+  optimizer:
+    type: adamw
+    lr: 5.0e-4
+    weight_decay: 0.05
+  scheduler:
+    type: cosine
+    warmup_epochs: 5
+  num_workers: 8
+  pretrain_ckpt: checkpoints/pretrain/epoch_300.pth
+data:
+  data_root: ./data/PartNetMobility
+  train_split: ./data/PartNetMobility/train.txt
+  val_split: ./data/PartNetMobility/val.txt
+  n_points: 8192
