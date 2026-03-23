@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8+-3776AB.svg)](https://www.python.org/)
 [![PyTorch 1.12+](https://img.shields.io/badge/PyTorch-1.12+-EE4C2C.svg)](https://pytorch.org/)
 
-[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/33615) | [Code](https://github.com/robhlzeng/GMAP)
+[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/33615) | [Code](https://github.com/xavier-zenghl/GMAP)
 
 ## Abstract
 
@@ -25,7 +25,7 @@ Precise perception and dexterous manipulation of articulated objects remain cent
 
 ```bash
 # Clone repository
-git clone https://github.com/robhlzeng/GMAP.git
+git clone https://github.com/xavier-zenghl/GMAP.git
 cd GMAP
 
 # Install dependencies
